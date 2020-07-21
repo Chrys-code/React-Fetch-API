@@ -1,24 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Nav from "./Nav.js";
+import About from "./About.js";
+import Items from "./Items.js";
+import ItemDetails from "./ItemDetails.js";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+      <div className="App">
+        <Nav />
+        <Route path="/" exact component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/Items" exact component={Items} />
+        <Route path="/Items/:id" component={ItemDetails} />
+      </div>
+    </Router>
+  );
+}
+
+function Home() {
+  return (
+    <div className="container">
+      <h1>Home</h1>
+      <p>In this react project all the Fortnite costumes can be viewed</p>
+      <p>Each costume provided it's name, description and it's item set name</p>
     </div>
   );
 }
