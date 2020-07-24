@@ -26,12 +26,17 @@ function ItemDetails({ match }) {
   }
 
   return (
-    <div>
-      <h1>{item.name}</h1>
-      <img src={itemImages.smallIcon} alt="Item Image" />
-      <p>Description:</p>
-      <p>{item.description}</p>
-      <p>{itemSet.text}</p>
+    <div className="container">
+      <div className="itemContainer">
+        <h1 className="display-4">{item.name}</h1>
+        <img src={itemImages.icon} alt="Item Image" />
+        <h5>Description:</h5>
+        <p>
+          {item.description}
+          <br></br>
+          {itemSet.text}
+        </p>
+      </div>
     </div>
   );
 }

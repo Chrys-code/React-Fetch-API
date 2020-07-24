@@ -10,15 +10,15 @@ function Nav() {
   return (
     <nav>
       <Link style={navstyle} to="/">
-        <h3>Logo</h3>
+        <h1 className="logo display-4">Logo</h1>
       </Link>
 
       <ul className="nav-links">
-        <Link style={navstyle} to="/about">
+        <Link className="font-weight-lighter" style={navstyle} to="/about">
           <li>About</li>
         </Link>
-        <Link style={navstyle} to="/items">
-          <li>Items</li>
+        <Link className="font-weight-lighter" style={navstyle} to="/items">
+          <li>Costumes</li>
         </Link>
       </ul>
     </nav>

@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+body {
+  background: linear-gradient(to left, rgb(150, 255, 200), rgb(120, 170, 255));
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -9,6 +17,14 @@ nav {
   justify-content: space-around;
   min-height: 8vh;
   background: rgb(55, 55, 75);
+}
+
+.logo:hover {
+  color: rgb(255, 100, 100);
+}
+
+ul {
+  list-style: none;
 }
 
 .nav-links {
@@ -22,14 +38,34 @@ nav {
   cursor: pointer;
 }
 
+a > li:hover {
+  text-decoration: none;
+  color: aqua;
+}
+
 li {
   padding: 0px 10px 0px 10px;
 }
 
 .container {
-  max-width: 40%;
+  margin-top: 5vh;
 }
 
 form {
   padding: 2%;
+}
+
+img {
+  margin: 4vh 0vh 4vh 0vh;
+}
+
+.results > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.keys {
+  margin-top: 4vh;
 }

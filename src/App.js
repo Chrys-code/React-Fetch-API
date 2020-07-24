@@ -23,9 +23,9 @@ function App() {
 function Home() {
   return (
     <div className="container">
-      <h1>Home</h1>
-      <p>In this react project all the Fortnite costumes can be viewed</p>
-      <p>Each costume provided it's name, description and it's item set name</p>
+      <h2 className="display-3">Home</h2>
+      <p>This is a costume viewer application for Fortnite</p>
+      <p>*A newsfeed could be created here*</p>
     </div>
   );
 }
